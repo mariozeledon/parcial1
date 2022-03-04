@@ -1,0 +1,176 @@
+.container{
+    margin: auto;
+    display: grid;
+    grid-template-areas: 
+    'efpem nul usac';
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 95px;
+}
+.efpem{
+    grid-area: efpem;
+}
+.null{
+    grid-area: nul;
+}
+.usac{
+    grid-area: usac;
+}
+.menu{
+    margin: auto;
+    display: grid;
+    grid-template-areas:
+    'inicio carrera ubicacion null face tw inst';
+    grid-template-columns: 11.11% 11.11% 11.11% 33.33% 11.11% 11.11% 11.11%;
+    grid-template-rows: 45px;
+}
+.inicio{
+    grid-area: inicio;
+    background-color: rgb(168, 50, 50); 
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+}
+.carrera{
+    grid-area: carrera;
+    background-color: rgb(168, 50, 50);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+}
+.ubicacion{
+    grid-area: ubicacion;
+    background-color: rgb(168, 50, 50);
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+}
+.null{
+    grid-area: null;
+    background-color: rgb(168, 50, 50);
+    
+}
+.face{
+    grid-area: face;
+    background-color: rgb(168, 50, 50);
+}
+.tw{
+    grid-area: tw;
+    background-color: rgb(168, 50, 50);
+}
+.inst{
+    grid-area: inst;
+    background-color: rgb(168, 50, 50)
+}
+.container2{
+    display: grid;
+    grid-template-areas:
+    'ttmision nul ttvision'
+    'mision nul vision';
+    grid-template-columns: 47.5% 5% 47.5%;
+}
+.titulomision{
+    grid-area: ttmision;
+    border-style: inset;
+    text-align: center;
+}
+.titulovision{
+    grid-area: ttvision;
+    border-style: inset;
+    text-align: center;
+}
+.mision{
+    grid-area: mision;
+    border-style: inset;
+    text-align: justify;
+}
+.vision{
+    grid-area: vision;
+    border-style: inset;
+    text-align: justify;
+}
+h5{
+    text-align: right;
+}
+.container3{
+    display: grid;
+    grid-template-areas: 
+    'info padep galileo pap';
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.info{
+    grid-area: info;
+    text-align: center;
+    background-color: rgb(126, 126, 126);
+    
+}
+.padep{
+    grid-area: padep;
+    text-align: justify;
+    background-color: rgb(70, 69, 69);
+    color: white;
+}
+.galileo{
+    grid-area: galileo;
+    text-align: justify;
+    background-color: rgb(168, 50, 50);
+    color: white;
+}
+.pap{
+    grid-area: pap;
+    text-align: justify;
+    background-color: rgba(139, 132, 98, 0.993);
+    color: white;
+}
+h3{
+    text-align: center;
+    margin: 30%;
+    color: black;
+}
+h2{
+    text-align: center;
+    
+}
+p{
+    margin: 1%;
+}
+h4{
+    background-color: rgb(168, 50, 50);
+    color: white;
+    text-align: center;
+}
+@media screen and (max-width:801px){
+    .container{
+    grid-template-areas: 
+    'efpem nul usac';
+    grid-template-columns: 47.5% 5% 47.5%;
+    }
+}
+@media screen and (max-width:801px){
+    .menu{
+    grid-template-areas:
+    'inicio carrera ubicacion face tw inst';
+    grid-template-columns: 25% 25% 25% 8.33% 8.33% 8.33%;
+    grid-template-rows: 85%;
+    }
+}
+@media screen and (max-width:801px){
+    .container2{
+        margin: auto;
+        grid-template-areas:
+        'nul ttmision'
+        'nul mision'
+        'nul ttvision'
+        'nul vision';
+        grid-template-columns: 25% 50%;
+    }
+}
+@media screen and (max-width:801px){
+    .container3{
+        grid-template-areas: 
+    'nul info'
+    'nul padep'
+    'nul galileo'
+    'nul pap';
+    grid-template-columns: 25% 50%;
+    }    
+}
